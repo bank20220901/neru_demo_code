@@ -1,0 +1,22 @@
+project:  
+    name: neru1  
+instance:  
+    name: production  
+    runtime: nodejs16  
+    region: aws.apse1  
+    application-id: 7aac2275-6c77-46e7-adc4-2b4ee895efe5  
+    capabilities:  
+        - voice  
+    entrypoint:  
+        - node  
+        - index.js  
+    configurations:  
+        contact:  
+            number: 18443659460  
+            type: phone  
+  
+debug:  
+    name: debug  
+    entrypoint:  
+        - nodemon  
+        - index.js  
